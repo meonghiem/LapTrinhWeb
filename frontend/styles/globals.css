@@ -1,0 +1,75 @@
+@tailwind base;
+@layer base {
+  svg {
+    display: inline;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.ant-modal-xl > .ant-modal {
+  width: calc(100vw - 40px) !important;
+}
+
+@media (min-width: 768px) {
+  .ant-modal-xl > .ant-modal {
+    width: calc(100vw - 320px) !important;
+  }
+}
+.ant-spin-dot-item {
+  background-color: #f19ca6 !important;
+}
+
+h1,
+.text-header {
+  @apply !font-bold text-lg md:text-2xl;
+}
+
+h2 {
+  @apply !font-bold text-base md:text-lg;
+}
+
+h3 {
+  @apply font-medium md:text-base text-sm;
+}
+
+h4,
+.text-content {
+  @apply md:text-sm text-[13px] leading-[170%];
+}
+
+h5,
+.note {
+  @apply md:text-xs text-[11px];
+}
+
+.text-error {
+  @apply text-[#EF3F5E];
+}
+
+.s-picker {
+  border: 1px solid #b3b3b3 !important;
+  border-radius: 3px;
+  width: 100%;
+}
+.s-picker.ant-picker:hover,
+.s-picker.ant-picker-focused {
+  border: 2px solid #b3b3b3;
+  box-shadow: none;
+  border-right-width: 3px !important;
+}
+
+.button-color {
+  background-color: #004B8F !important;
+  border-radius: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .ant-modal {
+    max-width: calc(100vw - 40px) !important;
+    /* margin: 46px auto; */
+  }
+}
+
+

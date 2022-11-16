@@ -1,0 +1,71 @@
+@import '~antd/dist/antd.variable.min.css';
+@import './variables';
+@import './reset';
+@import './font';
+@import './sticky';
+@import './other';
+
+ul,
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+// table
+
+.ant-table table {
+  font-weight: 500;
+}
+
+// .ant-table-tbody tr.ant-table-row-selected td,
+// .ant-table-tbody tr.ant-table-row-selected td:hover {
+//   background: #F4F5FA !important;
+// }
+
+.ant-table-thead {
+  .ant-table-cell:not(:last-child) {
+    padding: 1.25rem 1rem;
+    color: #ffffff;
+    background-color: #004b8f;
+    // justify-content: center;
+  }
+}
+
+.ant-modal-content {
+  border-radius: 10px !important;
+}
+.ant-modal-mask {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+}
+@media (min-width: 768px) {
+  .ant-modal-wrap {
+    left: 200px !important;
+  }
+  .ant-modal-mask {
+    clip-path: inset(0 0 0 200px);
+  }
+}
